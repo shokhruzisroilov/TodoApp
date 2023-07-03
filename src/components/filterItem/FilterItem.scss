@@ -1,0 +1,54 @@
+.filter-item {
+	width: 100%;
+	padding: 20px 24px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	h3,
+	h4 {
+		color: var(--filter-paragraf-color);
+		font-size: 14px;
+		font-weight: 400;
+		line-height: normal;
+		letter-spacing: -0.194px;
+		cursor: pointer;
+	}
+	h4:hover {
+		color: var(--filter-paragraf-color-hover);
+	}
+	span {
+		display: flex;
+		column-gap: 20px;
+		.paragraf {
+			color: var(--filter-paragraf-color);
+			font-size: 14px;
+			font-family: Josefin Sans;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			letter-spacing: -0.194px;
+			cursor: pointer;
+		}
+		p:hover {
+			color: var(--filter-paragraf-color-hover);
+		}
+		.paragraf-active {
+			color: #3a7cfd;
+			font-size: 14px;
+			font-family: Josefin Sans;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			letter-spacing: -0.194px;
+		}
+	}
+}
+@media screen and (max-width: 767px){
+	.filter-item{
+		padding: 20px 10px;
+		span{
+			display: flex;
+			column-gap: 5px;
+		}
+	}
+}

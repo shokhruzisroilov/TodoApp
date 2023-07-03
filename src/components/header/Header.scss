@@ -1,0 +1,21 @@
+header {
+	width: 100%;
+	padding-top: 70px;
+	.header__container {
+		display: flex;
+		justify-content: space-between;
+		h1 {
+			color: #fff;
+			font-size: 40px;
+			font-family: Josefin Sans;
+			font-weight: 700;
+			letter-spacing: 15px;
+			cursor: pointer;
+		}
+		img {
+			cursor: pointer;
+			width: 26px;
+			height: 26px;
+		}
+	}
+}
