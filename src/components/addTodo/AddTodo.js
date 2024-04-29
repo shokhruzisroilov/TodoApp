@@ -28,6 +28,11 @@ function AddTodo({ addTask, newTask, setNewTask }) {
 						value={newTask}
 						placeholder='Create a new todo…'
 						onChange={e => setNewTask(e.target.value)}
+						onKeyDown={e => {
+							if (e.key === 'Enter') {
+								addTask()
+							}
+						}}
 					/>
 				</span>
 				<button title='Add Task' className='btn-add' onClick={addTask}>
